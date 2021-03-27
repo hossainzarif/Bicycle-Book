@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import { Text, StyleSheet, StatusBar } from "react-native"
 import { createStackNavigator } from "@react-navigation/stack"
@@ -9,11 +7,6 @@ import MapScreen from './src/Screens/MapScreen';
 
 
 const MapStack = createStackNavigator()
-
-
-
-
-
 
 
 function App() {
