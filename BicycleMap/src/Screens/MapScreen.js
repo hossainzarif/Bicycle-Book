@@ -1,12 +1,14 @@
 import React from 'react';
-import { Text, StyleSheet } from "react-native"
+import { Text, StyleSheet, View } from "react-native"
 
-
+import CycleCard from "../Components/CycleCard"
 const MapScreen = () => {
     return(
-    <Text style={{alignSelf:"center" , }}>
-        HARRY POTTERS
-</Text>
+
+        <View>
+            <CycleCard/>
+        </View>
+
     )
 }
 
