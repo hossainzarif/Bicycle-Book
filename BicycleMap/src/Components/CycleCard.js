@@ -30,7 +30,7 @@ const CycleCard = (props) => {
 
                 <View >
 
-                    <Text style={[styles.statusName,{paddingLeft:10}]}>
+                    <Text style={[styles.statusName,{paddingLeft:15}]}>
                         Speed
                 </Text>
 
