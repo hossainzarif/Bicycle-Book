@@ -5,7 +5,7 @@ import CycleCard from "../Components/CycleCard"
 const MapScreen = () => {
     return(
 
-        <View style={{flex:1,alignItems:"center"}}>
+        <View style={{flex:1,alignItems:"center",justifyContent:"center"}}>
             <CycleCard/>
         </View>
 
