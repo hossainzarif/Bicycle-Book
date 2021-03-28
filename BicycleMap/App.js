@@ -4,7 +4,7 @@ import { createStackNavigator } from "@react-navigation/stack"
 import { NavigationContainer } from "@react-navigation/native"
 import MapScreen from './src/Screens/MapScreen';
 
-
+import CycleDetails from './src/Screens/CycleDetails'
 
 const MapStack = createStackNavigator()
 
@@ -14,6 +14,10 @@ function App() {
         <NavigationContainer>
             <MapStack.Navigator>
                 <MapStack.Screen name="Map" component={MapScreen} options={{
+                    headerShown: false
+                }}
+                />
+                <MapStack.Screen name="CycleDetails" component={CycleDetails} options={{
                     headerShown: false
                 }}
                 />

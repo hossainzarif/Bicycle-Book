@@ -8,10 +8,10 @@ const CycleCard = (props) => {
     return (
         <Card containerStyle={styles.cardStyle}>
             <Text style={styles.headingText}>
-                THIS IS DEMO </Text>
+                {props.title} </Text>
             <Image
                 style={styles.cycleImage}
-                source={require('../../assets/images/cycle-1.jpg')}
+                source={props.image}
 
             />
             <View style={{ height: 50, width: "100%", flexDirection: "row", justifyContent: "space-around", alignItems: "center" }}>
@@ -23,7 +23,7 @@ const CycleCard = (props) => {
                 </Text>
 
                     <Text style={styles.statusText}>
-                        80%
+                        {props.battery} %
                 </Text>
                 </View>
                 <View style={styles.verticleLine}></View>
@@ -35,7 +35,7 @@ const CycleCard = (props) => {
                 </Text>
 
                     <Text style={styles.statusText}>
-                        130 m/h
+                        {props.speed} m/h
                 </Text>
                 </View>
                 <View style={styles.verticleLine}></View>
@@ -48,7 +48,7 @@ const CycleCard = (props) => {
                     </Text>
 
                     <Text style={styles.statusText}>
-                        20 kg
+                        {props.weight}
                     </Text>
                 </View>
             </View>
