@@ -6,7 +6,6 @@ import { Button, Card } from 'react-native-elements'
 import StatusCard from '../Components/StatusCard'
 
 import colors from "../../assets/colors/colors"
-import { Colors } from 'react-native/Libraries/NewAppScreen';
 
 const CycleDetails = ({ route, navigation }) => {
 

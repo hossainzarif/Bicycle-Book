@@ -5,7 +5,8 @@ const colors = {
     black: '#0C0D0E',
     white: '#FBFCFE',
     buttoncolor:"#4465f9",
-    green: "#1ad91a"
+    green: "#1ad91a",
+    markercolor:"#859bff"
   };
   
   export default colors;
