@@ -34,6 +34,11 @@ const MapScreen = ({ navigation }) => {
             }
         }
         else {
+            var response = await request(PERMISSIONS.IOS.LOCATION_WHEN_IN_USE)
+
+            if (response === 'granted') {
+                locateCurrentPosition()
+            }
 
         }
 
@@ -50,53 +55,6 @@ const MapScreen = ({ navigation }) => {
 
     return (
 
-        //         <View style={{ flex: 1 }}>
-
-        //             {/* <View style={{ marginTop: 20, height: 380, }}>
-        //                 <FlatList
-        //                     data={firstlocationData}
-        //                     horizontal
-        //                     showsHorizontalScrollIndicator={false}
-
-        //                     renderItem={({ item }) => {
-
-        //                         return (
-
-
-        //                                 <TouchableOpacity
-        //                                     onPress={() => {
-        //                                         navigation.navigate('CycleDetails', {
-        //                                             items: item,
-        //                                         })
-        //                                     }
-        //                                     }
-        //                                 >
-        //                                     <CycleCard
-        //                                         title={item.title}
-        //                                         battery={item.Battery}
-        //                                         weight={item.weight}
-        //                                         speed={item.maxSpeed}
-        //                                         image={item.image}
-
-        //                                     />
-
-        //                                 </TouchableOpacity>
-
-
-
-
-        //                         )
-        //                     }
-        //                     }
-        //                 />
-
-
-
-        //             </View>
-        //  */}
-
-        // {/* 
-        //         </View> */}
 
 
 
