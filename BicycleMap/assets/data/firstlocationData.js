@@ -1,13 +1,14 @@
 const firstlocationData = [
     {
       id: 'cycle-1',
-      title: 'Elecetro cycle bx29',
+      title: 'Gear cycle bx29',
       image: require('../images/cycle-1.jpg'),
       Battery:80,
       available: true,
       price: 10,
       weight:20,
       maxSpeed:120,
+      type:"Walking bike"
     },
     {
       id: 'cycle-2',
@@ -19,6 +20,8 @@ const firstlocationData = [
       price: 16,
       weight:20,
       maxSpeed:120,
+      type:"Electric bike"
+
     },
     {
       id: 'cycle-3',
@@ -30,6 +33,8 @@ const firstlocationData = [
       price: 15,
       weight:20,
       maxSpeed:120,
+      type:"Electric bike"
+
     },
     {
       id: 'cycle-4',
@@ -41,6 +46,8 @@ const firstlocationData = [
       price: 20,
       weight:20,
       maxSpeed:120,
+      type:"Electric bike"
+
     },
 
 
