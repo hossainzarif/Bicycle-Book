@@ -9,53 +9,52 @@ import CycleDetails from "../Screens/CycleDetails"
 
 
 
-const MapScreen = ({navigation}) => {
+const MapScreen = ({ navigation }) => {
     return (
 
-        <View style={{ flex: 1,alignItems:"center",justifyContent:"center" ,}}>
+        <View style={{ flex: 1 }}>
 
-        
-            <FlatList
-                data={firstlocationData}
-                horizontal
-                renderItem={({ item }) => {
-                
-                    return (
+            <View style={{ marginTop: 20, height: 380, }}>
+                <FlatList
+                    data={firstlocationData}
+                    horizontal
+                    showsHorizontalScrollIndicator={false}
 
+                    renderItem={({ item }) => {
 
-
-                        <TouchableOpacity
-                            onPress={() => {
-                                navigation.navigate('CycleDetails', {
-                                    items: item,
-                                })
-                            }
-                            }
-                        >
-                            <CycleCard 
-                            title = {item.title}
-                            battery = {item.Battery}
-                            weight = {item.weight}
-                            speed = {item.maxSpeed}
-                            image = {item.image}
-                            
-                            
-                            
-                            />
-
-                        </TouchableOpacity>
+                        return (
 
 
+                                <TouchableOpacity
+                                    onPress={() => {
+                                        navigation.navigate('CycleDetails', {
+                                            items: item,
+                                        })
+                                    }
+                                    }
+                                >
+                                    <CycleCard
+                                        title={item.title}
+                                        battery={item.Battery}
+                                        weight={item.weight}
+                                        speed={item.maxSpeed}
+                                        image={item.image}
+
+                                    />
+
+                                </TouchableOpacity>
 
 
-                    )
-                }
-                }
-            />
+             
 
+                        )
+                    }
+                    }
+                />
 
 
 
+            </View>
 
 
 
