@@ -1,9 +1,12 @@
 npm install react-navigation-stack @react-native-community/masked-view react-native-safe-area-context
 npm install @react-navigation/native @react-navigation/stack
-npm i react-native-vector-icons
 npm i react-native-gesture-handler
 npm install entypo
 npm i @react-navigation/bottom-tabs
 npm i --save react-native-safe-area-context
 npm i react-native-gesture-handler
 npm i react-native-maps
+npm install @react-native-community/geolocation --save
+npm install --save react-native-permissions
+npm install react-native-vector-icons --save
+npm install react-native-elements
